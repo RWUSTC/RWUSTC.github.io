@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>Study & Research - Hefeng Xu</title>
+    <style>
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        #bs-example-navbar-collapse-1 li{
+            float: left;
+            width: 115px;
+            line-height:20px;
+            text-align: center;
+            position:relative;
+            border:none;
+        }
+        #bs-example-navbar-collapse-1 li a {
+            font-size:16px;
+            display:block;
+            outline:0;
+            text-decoration:none; 
+        }
+
+        #bs-example-navbar-collapse-1 li:hover .dropdown_1column {
+            left:0px;
+            top:36px;
+        }
+        .dropdown_1column{ /* 下拉菜单边框颜色*/
+            margin: 0px auto;
+            position: absolute;
+            left: -999em;
+            text-align: left;
+
+            border-top: none;
+            width: 140px;
+        }
+        #bs-example-navbar-collapse-1 li:hover div a { /* 下拉菜单文字颜色*/
+        font-size:12px
+        ;color:#9999;
+        }
+        #bs-example-navbar-collapse-1 li:hover div a:hover{color:#e6f8e9;} /*下拉带单鼠标停留颜色*/
+
+
+        #bs-example-navbar-collapse-1 li ul {
+            list-style:none;padding:10px 5px;
+        margin:0;
+        }
+        #bs-example-navbar-collapse-1 li ul li {
+        font-size:12px;
+        line-height:16px;
+        position:relative;
+        padding:0;margin:0;
+        float:none;
+        text-align:left;
+        width:130px;
+        }
+        #bs-example-navbar-collapse-1 li ul li:hover {
+        background:none;
+        border:none;padding:0;
+        margin:0;
+        }
+    </style>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68269928-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+    $("#mymenu ul li").next("ul").hide();
+    $("#mymenu ul li").click(function()
+    {
+    $(this).next("ul").toggle();
+    });
+    });
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><div><img src=img/icon.png style="width:30px;height:30px;vertical-align:middle" alt="Hefeng Xu's Homepage"/>
+    
+                    Hefeng Xu's Homepage
+                </div></a>
+            </div>
+            
+                
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                   <li><a class="navbar-nav" href="index.html">Home</a>
+                    <div class="dropdown_1column">
+                        <div class="col_1">
+                                <ul class="simple">
+                                        <li><a href="index.html#ABOUT">About Me</a></li>
+                                </ul>
+                        </div>
+                   
+                    </div>
+                    </li>
+                    <li>
+                        <a class="navbar-nav" href="research.html">S&R</a>
+                        <div class="dropdown_1column">
+                            <div class="col_1">
+                                    <ul class="simple">
+                                            <li><a href="research.html#RESEARCH">Research Interests</a></li>
+                                            <li><a href="research.html#SEMINARS">Seminars</a></li>
+                                            <li><a href="research.html#TEACHING">Teaching</a></li>
+                                            <li><a href="research.html#NOTES">Notes</a></li>
+                                            <li><a href="research.html#PROJECTS">Projects</a></li>
+                                            <li><a href="research.html#PUBLICATIONS">Publications</a></li>
+                                            <li><a href="research.html#LINKS">Useful Links</a></li>
+                                    </ul>
+                            </div>
+                       
+                        </div>
+                    </li>
+                   <!-- <li> -->
+                        <!-- <a href="gallery.html">Gallery</a> -->
+                    <!-- </li> -->
+                    <!-- <li> -->
+                        <!-- <a href="#">Fun</a> -->
+                    <!-- </li> -->
+                   <li>
+                        <a class="navbar-nav" href="relax.html">Relax</a>
+                        <div class="dropdown_1column">
+                            <div class="col_1">
+                                    <ul class="simple">
+                                            <li><a href="relax.html#PHOTO">Photographs</a></li>
+                                            <li><a href="relax.html#LE">LE Fan</a></li>
+                                            <li><a href="relax.html#Train">Trainholic</a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                   <li>
+                        <a class="navbar-nav" href="contact.html">Contact</a>
+                        <div class="dropdown_1column">
+                            <div class="col_1">
+                                    <ul class="simple">
+                                            <li><a href="contact.html#MAIL">Email</a></li>
+                                            <li><a href="contact.html#GITHUB">Github</a></li>
+                                            <li><a href="contact.html#SOCIAL">Social Media</a></li>
+                                            <li><a href="contact.html#ADD">Address</a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/post-bg.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Just Think Aloud</h1>
+                        <hr class="small">
+                        <span class="subheading">I wanna know what I wanna know</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <font size="6" style="text-decoration:underline">We can talk about physics and mathematics in Chinese, English, French and Japanese.</font>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="RESEARCH">
+                    <h2>Research Interests</h2>
+                    <ul>
+                   <li>High Energy Physics-Theory/Phenomenology
+                       <ul>
+                            <li>
+                                <a href="https://ncatlab.org/nlab/show/perturbative+quantum+field+theory" style="text-decoration:none">Perturbation Quantum Field Theory: Calculating High-loop Feynman Integrals</a> 
+                            </li>
+                            <li>
+                                Some basic ideas towards standard model
+                            </li>
+                    <!--         <li>
+                                Generative Models
+                            </li> -->
+                         <!--    <li>
+                                Probabilistic Graphical Models
+                            </li> -->
+                       </ul>
+                    </li>
+                    <li>Mathematical Physics
+                        <ul>
+                            <li>
+                                <a href="https://www.researchgate.net/publication/335257778_Quantum_Mechanics_of_Particle_on_a_torus_knot_Curvature_and_Torsion_Effects" style="text-decoration:none">Topological Quantum Field Theory: Torus Knot Groups and Physics</a>
+                            </li>
+                            <li>
+                                <a href="https://ncatlab.org/nlab/show/quantum+field+theory#higher_categories_in_quantum_field_theory" style="text-decoration:none">Categories: Topos and QFT</a>
+                            </li>
+                            <li>
+                                <a href="https://arxiv.org/pdf/0809.0086.pdf" style="text-decoration:none">Intersection Theory: Intersection Number and Twisted De Rham Cohomology</a>
+                            </li>
+                            <li>
+                                <a href="http://amypang.github.io/notes/repsofuqsl2.pdf" style="text-decoration:none">Representation of Quantum Groups</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <a href="#"> -->
+                        <!-- <img class="img-responsive" src="img/post-sample-image.jpg" alt=""> -->
+                    <!-- </a> -->
+                    <!-- <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span> -->
+                </br></div>
+
+
+
+                 <!-- <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h2>Softwares</h2>
+                    <ul>
+                    <li>ICQ - an implementation of ICQ based on MFC. (<a href="https://github.com/hugochan/authentication" style="color:blue">get it</a>)
+                    </li></br>
+                   <li>rUDP - an implementation of reliable UDP. (<a href="https://github.com/hugochan/rUDP" style="color:blue">get it</a>)
+                    </li></br>
+                    <li>DVRouting - an implementation of distance vector routing protocol. (<a href="https://github.com/hugochan/DVRouting" style="color:blue">get it</a>)
+                    </li>
+                    </ul>
+                </br></div> -->
+
+                 <!-- <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h2>Talks</h2>
+                    <ul>
+                    <li>Clique percolation and resolution limits in community detection - Foundation of Network Science CSCI-6960 course presentation. (<a href="file/Clique percolation and resolution limits.pdf" style="color:blue">PDF</a>)
+                    </li>
+                    </ul>
+                </br></div> -->
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="SEMINARS">
+                    <h2>Seminars</h2>
+                    <ul>
+                        Currently, I myself am reading some tough books to learn QFT, Algebraic Geometry, etc. So here are some reading seminars.
+
+                       <li>
+                           Seminar on Peskin's <i>An Introduction to Quantum Field Theory</i>
+                           <ul>
+                               <li>
+                                   Organized by Hefeng Xu
+                               </li>
+                               <li>
+                                   Every Wednesday night, 2021 ~
+                               </li>
+                           </ul>
+                        </li> 
+                        <li>
+                           Seminar on Hartshorne's Exercises 
+                           <ul>
+                               <li>
+                                   Given by GPJ,
+                               </li>
+                               <li>
+                                   Room 5107, every Sunday night, Spring Semester, 2021.
+                               </li>
+                           </ul>   
+                        </li>
+                        <li>
+                           <a href="https://researchseminars.org/seminar/DifCohTop" style="text-decoration:none" color="black">Seminar on Differential Cohesive Topos</a>
+                           <ul>
+                               <li>
+                                   Organized by Keyao Peng
+                               </li>
+                               <li>
+                                   Every Saturday GMT +8 = 01:30-03:00, Long Term, 2021 
+                               </li>
+                           </ul>
+                        </li>
+                        <li>
+                            Seminar on Arithmatic Geometry
+                            <ul>
+                                <li>
+                                    Organized by Yongqi Liang
+                                </li>
+                                <li>
+                                    Room 1418, Dept. of Math. Every Friday night, Spring Semester, 2021.
+                                </li>
+                            </ul>    
+                        </li>
+                        <li>
+                            Seminar on Homological Algebra
+                            <ul>
+                                <li>
+                                    Given by Hefeng Xu
+                                </li>
+                                <li>
+                                    Every Saturday night, Autumn Semester, 2020.
+                                </li>
+                                <li>
+                                    <a href="" style="text-decoration:underline">Lecture Notes(CURRENTLY UNAVALIABLE)</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Seminar on Loop Integral and Phase Space Integral Calculation
+                            <ul>
+                                <li>
+                                    Organized by Yang Zhang, Lilin Yang, etc
+                                </li>
+                                <li>
+                                    <a href="https://indico.ihep.ac.cn/event/13033/" style="text-decoration:none" color="black">Homepage (Indico)</a>
+                                </li>
+                                <li>
+                                    Every Thursday night, since Oct.29, 2020.
+                                </li>
+                                <li>
+                                    Be advised to talk on Erik's Euler Characteristics, see here:<a href="https://arxiv.org/abs/1712.09215" style="text-decoration:none" color="black">arXiv: 1712.09215</a>
+                                    <li>
+                                        Regular talk with Jiuci Xu (UCSB) on this topic, maybe long term. Every Thursday morning.
+                                    </li>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Seminar on Gravitational Wave
+                            <ul>
+                                <li>
+                                    Organized by Yang Zhang, Zonglin Mo, etc
+                                </li>
+                                <li>
+                                    PCFT-USTC, every Tuesday night, since Sept.28, 2021.
+                                </li>
+                                <li>
+                                    Be advised to talk on geometric and topological structure on the semi-flat space-time in the E3 space
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Seminar on Algebraic Geometry
+                            <ul>
+                                <li>
+                                    Organized by Mao Sheng, GPJ, etc
+                                </li>
+                                <li>
+                                    Room 5406, every Saturday night, since Sept.25, 2021.
+                                </li>
+                                <li>
+                                    Mainly on Chapter 1, 4~7, Hartshorne's Book and some of EGA
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>                
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="TEACHING">
+                    <h2>Teaching</h2>
+                        <font size="100" color="red"><i style="text-decoration:underline" color="red">Not Yet By Far</i></font>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="NOTES">
+                    <h2>Notes</h2>Here's the archive of the notes I've made in the past few years, Including lecture notes of the courses in USTC and some reading notes. You may feel free to take them. I'd be glad if you report the bugs to me.
+                    <ul>
+                        <li>
+                            <details class="menu" close>
+                                <summary style="text-decoration:underline">Course Notes in USTC <font size="2">(Click to expand)</font></summary>
+                            <ul>
+                                <li>
+                                    Analytic Mechanics (A)
+                                    <ul>
+                                        <li>
+                                            Given by Asst.Prof. Haijun Pan, autumn 2020.
+                                            <details open>
+                                                <summary style="text-decoration:underline" >                             
+                                         </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Electrodynamics 
+                                    <ul>
+                                        <li>
+                                            Given by Prof. Xin Tao, Spring 2021. <a href="http://staff.ustc.edu.cn/~xtao/courses/ce/notes/ce.pdf" style="text-decoration:none"><font color="red">(Official note by Prof. X.Tao)</font></a>
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Thermaldynamics and Statistical Physics (A)
+                                    <ul>
+                                        <li>
+                                            Given by Lec. Chuncheng Wang, spring 2021. 
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Quantum Mechanics (A)
+                                    <ul>
+                                        <li>
+                                            Given by Prof. Yang Zhang and Asst.Prof Xiangfa Zhou, autumn 2021.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Advanced Quantum Mechanics
+                                    <ul>
+                                        <li>
+                                            Given by Asst.Prof. Renyou Zhang, autumn 2021.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Quantum Field Theory (I)
+                                    <ul>
+                                        <li>
+                                            Given by Prof. Daoneng Gao, autumn 2021.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Equations in Mathematical Physics (A)
+                                    <ul>
+                                        <li>
+                                            Given by Asst.Prof. Yongbing Zhang, Spring 2021.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Computational Physics (A)
+                                    <ul>
+                                        <li>
+                                            Given by Prof. Zejun Ding, autumn 2021.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Analysis (B1) 
+                                    <ul>
+                                        <li>
+                                            Given by Prof. Xin Li & Assi.Prof Hao Yin, autumn 2019.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Analysis (B2)
+                                    <ul>
+                                        <li>
+                                            Given by Prof. Yi Cheng, spring 2020.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Analysis (B3)
+                                    <ul>
+                                        <li>
+                                            Given by Prof. Qing Chen, autumn 2020.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Advanced Real Analysis
+                                    <ul>
+                                        <li>
+                                            Given by Asst.Prof. Xieping Wang, autumn 2021.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Linear Algebra (B2)
+                                    <ul>
+                                        <li>
+                                            Given by Prof. Xiaowu Chen, autumn 2020.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Probability and Mathematical Statistics
+                                    <ul>
+                                        <li>
+                                            Given by Asst.Prof. Tiantian Mao, autumn 2020.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Modern Algebra (H)
+                                    <ul>
+                                        <li>
+                                            Given by Prof. Xiaowu Chen, spring 2021.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Topology (H)
+                                    <ul>
+                                        <li>
+                                            Given by Prof. Zuoqin Wang, spring 2021.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Algebraic Topology
+                                    <ul>
+                                        <li>
+                                            Given by Asst.Prof. Bailin Song, autumn 2021.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Differential Geometry
+                                    <ul>
+                                        <li>
+                                            Given by Prof. Shiping Liu, autumn 2020.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Riemannian Geometry
+                                    <ul>
+                                        <li>
+                                            Given by Prof. Shiping Liu, spring 2021.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Differential Manifolds
+                                    <ul>
+                                       <li>
+                                           Given by Prof. Zuoqin Wang, autumn 2021.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Algebraic Geometry (I)
+                                    <ul>
+                                        <li>
+                                            Given by Prof. Mao Sheng, autumn 2020.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Algebraic Geometry (II)
+                                    <ul>
+                                        <li>
+                                            Given by Prof. Mao Sheng, spring 2021.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Algebraic Geometry (III)
+                                    <ul>
+                                        <li>
+                                            Given by Prof. Mao Sheng, autumn 2021.
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                NOTE HERE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </details>
+                        </li>
+                        <li>
+                            <details class="menu" close>
+                                <summary style="text-decoration:underline">Reading Notes <font size="2">(Click to expand)</font></summary>
+                            
+                            <ul>
+                                <li>
+                                    A Course in Homological Algebra, Stammbach.
+                                    <ul>
+                                        <li>
+                                            Complete Version (1.0)
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Introduction to Commutative Algebra, Atiyah-Macdonald
+                                    <ul>
+                                        <li>
+                                            Complete Version (1.0)
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Algebraic Geometry, Hartshorne.
+                                    <ul>
+                                        <li>
+                                            Including Exercises
+                                        </li>
+                                        <li>
+                                            Updated to Chap.4
+                                        </li>
+                                    </ul>  
+                                </li>
+                                <li>
+                                    Éléments de géométrie algébrique, Grothendieck.
+                                    <ul>
+                                        <li>
+                                            Le langage des schémas (Updated to Chap.1 Sec.6)
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Fondements de la Géometrie Algébrique, Grothendieck
+                                    <ul>
+                                        <li>
+                                            Technique de descente et théorèmes d'existence en géométrie algébrique (Updated to II: Le théorème d'existence en théorie formelle des modules) 
+                                        </li>
+                                        <li>
+                                            Théorème de dualité pour les faisceaux algébriques cohérents
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Algebraic Topology, Hatcher.
+                                    <ul>
+                                        <li>
+                                            Updated to Chap.4
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Categories for Working Mathematicians. 
+                                    <ul>
+                                        <li>
+                                            Updated to Chap.8
+                                        </li>
+                                    </ul>  
+                                </li>                                      
+                                 <li>
+                                     An Introduction to Quantum Field Theory, Peskin and Schroeder
+                                    <ul>
+                                        <li>
+                                            Updated to Chap.12
+                                        </li>
+                                    </ul> 
+                                </li>
+                                <li>
+                                    Quantum Field Theory, Srednicki
+                                   <ul>
+                                       <li>
+                                           Sect.9 ~ 21
+                                       </li>
+                                   </ul> 
+                               </li>
+                               <li>
+                                Principles of Algebraic Geometry, Griffith and Harris
+                               <ul>
+                                   <li>
+                                       Updated to Chap.6
+                                   </li>
+                               </ul> 
+                              </li>
+                              <li>
+                                Introduction to Complex Analysis in Several Variables, V.Scheidermann
+                               <ul>
+                                   <li>
+                                       Updated to Chap.4
+                                   </li>
+                               </ul> 
+                              </li>
+                              <li>
+                                Real Analysis, Folland
+                               <ul>
+                                   <li>
+                                       Updated to Chap.5
+                                   </li>
+                               </ul> 
+                              </li>
+                              <li>
+                                Algebraic Topology, Munkres
+                               <ul>
+                                   <li>
+                                       Updated to Chap.3
+                                   </li>
+                               </ul> 
+                              </li>
+                            </ul>
+                        </details>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="PROJECTS">
+                    <h2>Projects</h2>
+                    Here's the archive of projects I've finished and in progress. The vault may include the main note/paper, core code package, pics/videos of result, references, etc. If you are going to cite/use any of these projects, please contact me. 
+                    <ul>
+                        <li>
+                            <details close>
+                                <summary style="text-decoration:underline">CUPT 2020 (China Undergraduate Physics Tournament) <font size="2">(Click to expand)</font></summary>
+                                    <ul>
+                                        <li>
+                                            <a href="projects/CUPT/Polygon vortex.pptx" style="text-decoration:none">
+                                                Polygon Vortex (Exps., Analysis, PPTs, Paper, Refs.)
+                                            </a>
+                                        </li>
+                                            
+                                        <li>
+                                            <a href="projects/CUPT/Magnetic Levitation.pptx" style="text-decoration:none">
+                                                Magnetic Levitation (Exps., Analysis, Paper, Refs.)
+                                            </a>
+                                        </li>
+                                    </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details close>
+                                <summary style="text-decoration:underline">Seminar of "Science & Society", 2019~2020 <font size="2">(Click to expand)</font></summary>
+                                    <ul>
+                                        <li> 
+                                            <a href="projects/R&D_class/R&D.pdf" style="text-decoration:none">
+                                                Photovoltaic panel power generation and optimization based on the influence of geographical factors and its application prospects in poverty alleviation (Exps., Data, PPTs, Paper, Refs.)
+                                            </a>
+                                        </li>
+                                    </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details close>
+                                <summary style="text-decoration:underline">Qiangji Talented Class of Physical Experiments <font size="2">(Click to expand)</font></summary>
+                                    <ul>
+                                        <li> 
+                                            <a href="" style="text-decoration:none">
+                                                Wireless Charging Device (Exps., Designs, Data, PPTs, Paper, Refs.)
+                                                <font size="2" color="red">(Group Work by Yizhuo Tan, Yuqian Chen, Wenwei Xu, Shuchen Zhang and Hefeng Xu)</font>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                Michelson Interferometer (Exps., Designs, Data, PPTs, Paper, Refs.)
+                                                <font size="2" color="red">(Lead by Shuchen Zhang)</font>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                Thermometer for Extremele High and Low Temperature (Exps., Designs, Data, PPTs, Paper, Refs.)
+                                                <font size="2" color="red">(Lead by Hefeng Xu)</font>
+                                            </a>
+                                        </li>
+                                    </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details close>
+                                <summary style="text-decoration:underline">Homework from Prof. Yang Zhang <font size="2">(Click to expand)</font></summary>
+                                    <ul>
+                                        <li> 
+                                            <a href="" style="text-decoration:none">
+                                                Check the Feynman Integrals in paper (Codes, Data, Refs)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                Papers Check (Codes, Data, Refs)
+                                            </a>
+                                        </li>
+                                    </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details close>
+                                <summary style="text-decoration:underline">Intersection Theory and High-loop Feynman Integrals <font size="2">(Click to expand)</font></summary>
+                                    <ul>
+                                        <li> 
+                                            <a href="" style="text-decoration:none">
+                                                An Introduction to Intersection Theory in HEP (Note)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                Winding number of the Fundamental Groups of knots in 3-loop 2-Point Feynman Integral (Code, Note)
+                                                <font size="2" color="red">(In Progress)</font>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" style="text-decoration:none">
+                                                The Irreducible Representation of the Clliford Algebra of 3-loop 2-Point Feynman Integral and the Intersection Number of Its Galois Correspondence(Code, Note)
+                                                <font size="2" color="red">(In Progress)</font>
+                                            </a>
+                                        </li>
+                                    </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details close>
+                                <summary style="text-decoration:underline">Java Programming Design Final Project <font size="2">(Click to expand)</font></summary>
+                                <ul>
+                                    <li>
+                                        <a href="projects/Java_2020_aut/Java.zip" style="text-decoration:none">
+                                            Integrated Simulator of Various Phenomena in Classic Mechanics (Codes) 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </details>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="PUBLICATIONS">
+                    <h2>Publications</h2>
+                        <font size="100" color="red"><i style="text-decoration:underline" color="red">Wish to Come Out Soon</i></font>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="LINKS">
+                    <h2>Useful Links</h2>
+                        Here are some useful links to some other institutes, personnels and information. Hope these can help you out.
+                        <ul>
+                            <li>
+                                <details close>
+                                    <summary style="text-decoration: underline">Links <font size="2">(Click to expand)</font></summary>
+                                        <ul>
+                                            <li>
+                                                <a href="https://ustc.edu.cn" style="text-decoration: none">Official Site of University of Science and Technology of China</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://physics.ustc.edu.cn" style="text-decoration: none">School of Physical Science, USTC</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://mphy.ustc.edu.cn" style="text-decoration: none">Dept. of Modern Physics, USTC</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://icts.ustc.edu.cn" style="text-decoration: none">Interdisciplinary Center for Theoretical Study, USTC</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://math.ustc.edu.cn" style="text-decoration: none">School of Mathematical Science, USTC</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://pcft.ustc.edu.cn" style="text-decoration: none">Peng Huanwu Center for Fundamental Theory in High Energy Physics</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.ihep.cas.cn/" style="text-decoration: none">Institute of High Energy Physics, CAS</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.itp.cas.cn/" style="text-decoration: none">Institute of Theoretical Physics, CAS</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.math.ac.cn/" style="text-decoration: none">Institute of Mathematics, Academy of Mathematics and Systems Science, CAS</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://ymsc.tsinghua.edu.cn" style="text-decoration: none">Yau Mathematical Sciences Center, THU</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://staff.ustc.edu.cn/~wangzuoq/" style="text-decoration: none">Homepage of Prof. Zuoqin Wang</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://staff.ustc.edu.cn/~spliu/" style="text-decoration: none">Homepage of Prof. Shiping Liu</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://staff.ustc.edu.cn/~xtao/" style="text-decoration: none">Homepage of Prof. Xin Tao</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://staff.ustc.edu.cn/~yzhphy/" style="text-decoration: none">Homepage of Prof. Yang Zhang</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://home.ustc.edu.cn/~yx3x/USTCdata.html" style="text-decoration: none">Homepage of Junyan Zhang (Refs. in Maths)</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://staff.ustc.edu.cn/~mathsu01/pu/waming.html" style="text-decoration: none">Official Site of <i>Warming</i> (Students' Magazine of Dept. of Maths.)</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://lug.ustc.edu.cn" style="text-decoration: none">Official Site of USTCLUG (Linux Users Group)</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://mirrors.ustc.edu.cn" style="text-decoration: none">USTCLUG Mirror Site</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://stacks.math.columbia.edu" style="text-decoration: none">Stack Project</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://ncatlab.org/nlab/show/geometry+of+physics" style="text-decoration: none">Geometry of Physics in nlab</a>
+                                            </li>
+                                        </ul>
+                                </details>
+                            </li>
+                        </ul>
+                </div>      
+
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="mailto:rwinters@mail.ustc.edu.cn" title="rwinters@mail.ustc.edu.cn">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Classified!">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-qq fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/RWUSTC?tab=repositories">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Powered by Start Bootstrap</p>
+                    <!-- Page last modified on September 24, 2015 -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
